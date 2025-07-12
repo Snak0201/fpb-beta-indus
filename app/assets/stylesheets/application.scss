@@ -1,6 +1,11 @@
 // Sassy
 $gms-temari: #3390c6;
 
+body{
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
 .header{
   background-color: $gms-temari;
   height: 150px;
