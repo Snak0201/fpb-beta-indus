@@ -1,1 +1,11 @@
 // Sassy
+$gms-temari: #3390c6;
+
+.header{
+  background-color: $gms-temari;
+
+  .title{
+    color: white;
+    font-size: 24px;
+  }
+}
