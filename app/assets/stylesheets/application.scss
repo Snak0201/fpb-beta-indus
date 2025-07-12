@@ -3,9 +3,18 @@ $gms-temari: #3390c6;
 
 .header{
   background-color: $gms-temari;
+  height: 150px;
+  display: flex;
+  align-items: center;
+
+  .logo{
+    width: 150px;
+    height: 150px;
+  }
 
   .title{
     color: white;
-    font-size: 24px;
+    font-size: 36px;
+    padding-left: 20px;
   }
 }
