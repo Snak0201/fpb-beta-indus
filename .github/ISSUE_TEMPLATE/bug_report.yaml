@@ -1,0 +1,41 @@
+name: バグ報告テンプレート
+description: バグの報告はこちら
+title: 【Bug】
+label: bug
+body:
+  - type: input
+    id: overview
+    attributes:
+      label: バグの概要
+      description: 例：○○ページのデータが表示されない
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 再現手順
+      description: 
+      value: |
+        1. a
+        1. b
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 期待する動作・実際の動作
+      description: 期待する動作と実際の動作のURL、画像、動画
+    validations:
+      required: true
+  - type: markdown
+    id: definition-of-done
+    attributes:
+      label: 完了条件
+      description: 何をもって完了とするか
+      value: |
+        - [ ] 
+  - type: textarea
+    id: others
+    attributes:
+      label: その他
+      
