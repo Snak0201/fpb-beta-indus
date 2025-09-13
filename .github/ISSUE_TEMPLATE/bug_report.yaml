@@ -1,7 +1,7 @@
 name: バグ報告テンプレート
 description: バグの報告はこちら
 title: 【Bug】
-label: bug
+labels: bug
 body:
   - type: input
     id: overview
@@ -30,9 +30,8 @@ body:
   - type: markdown
     id: definition-of-done
     attributes:
-      label: 完了条件
-      description: 何をもって完了とするか
       value: |
+        ## 完了条件
         - [ ] 
   - type: textarea
     id: others
