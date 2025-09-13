@@ -31,8 +31,8 @@ body:
     id: definition-of-done
     attributes:
       value: |
-        ## 完了条件
-        - [ ] 
+        ### 完了条件
+        - [ ] 完了条件
   - type: textarea
     id: others
     attributes:
