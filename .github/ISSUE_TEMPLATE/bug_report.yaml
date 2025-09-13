@@ -27,11 +27,12 @@ body:
       description: 期待する動作と実際の動作のURL、画像、動画
     validations:
       required: true
-  - type: markdown
-    id: definition-of-done
+  - type: textarea
+    id: difinition-of-done
     attributes:
+      label: 完了条件
+      description: ここは何も編集しないで送信してください
       value: |
-        ### 完了条件
         - [ ] 完了条件
   - type: textarea
     id: others
