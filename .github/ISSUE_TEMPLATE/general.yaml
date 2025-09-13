@@ -38,7 +38,7 @@ body:
     attributes:
       label: 完了条件
       description: 何をもって完了とするか
-      placeholder: |
+      value: |
         - [ ] 
     validations:
       required: true
