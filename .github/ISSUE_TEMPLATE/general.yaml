@@ -14,11 +14,15 @@ body:
     attributes:
       label: なぜその課題が起こっているか
       description: 例：サービスを介さず、自由な形式で発信できるメディアを持っていないため
+    validations:
+      required: true
   - type: textarea
     id: overview
     attributes:
       label: 解決のために作るもの
       description: 例：ブログ機能の追加
+    validations:
+      required: true
   - type: textarea
     id: functional-requirement
     attributes:
@@ -36,6 +40,8 @@ body:
       description: 何をもって完了とするか
       placeholder: |
         - [ ] 
+    validations:
+      required: true
   - type: input
     id: release-date
     attributes:
