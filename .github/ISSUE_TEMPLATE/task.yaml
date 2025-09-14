@@ -1,0 +1,38 @@
+name: （開発者向け）作業Issueテンプレート
+description: 作業Issueの作成はこちら
+title: 【施策概要】
+body:
+  - type: textarea
+    id: issue
+    attributes:
+      label: 関連Issue
+  - type: textarea
+    id: overview
+    attributes:
+      label: 作るものの概要
+      description: 例：記事を作成できるようにする
+    validations:
+      required: true
+  - type: textarea
+    id: functional-requirement
+    attributes:
+      label: 機能要件
+      description: 作るものの詳細（ページの表示ロジック、データ元などを含む）
+  - type: textarea
+    id: design
+    attributes:
+      label: デザイン
+      description: デザイン等がある場合、画像やリンクを記載
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: 完了条件
+      description: 何をもって完了とするか
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: others
+    attributes:
+      label: その他

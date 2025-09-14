@@ -1,0 +1,53 @@
+name: 汎用テンプレート
+description: Issueの作成はこちら
+title: 【施策概要】
+body:
+  - type: textarea
+    id: issue
+    attributes:
+      label: 解決したい課題
+      description: 例：多くの人に自らの伝えたい情報が届いていない
+    validations:
+      required: true
+  - type: textarea
+    id: reason 
+    attributes:
+      label: なぜその課題が起こっているか
+      description: 例：サービスを介さず、自由な形式で発信できるメディアを持っていないため
+    validations:
+      required: true
+  - type: textarea
+    id: overview
+    attributes:
+      label: 解決のために作るもの
+      description: 例：ブログ機能の追加
+    validations:
+      required: true
+  - type: textarea
+    id: functional-requirement
+    attributes:
+      label: 機能要件
+      description: 作るものの詳細（ページの表示ロジック、データ元などを含む）
+  - type: textarea
+    id: design
+    attributes:
+      label: デザイン
+      description: デザイン等がある場合、画像やリンクを記載
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: 完了条件
+      description: 何をもって完了とするか
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: input
+    id: release-date
+    attributes:
+      label: リリース希望日
+      description: あれば記載し、背景をその他に記載する
+  - type: textarea
+    id: others
+    attributes:
+      label: その他
