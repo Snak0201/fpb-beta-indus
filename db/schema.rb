@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_09_14_094941) do
+ActiveRecord::Schema[8.0].define(version: 2025_09_14_100659) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
     t.text "body"
@@ -63,7 +63,16 @@ ActiveRecord::Schema[8.0].define(version: 2025_09_14_094941) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "blog_committees", force: :cascade do |t|
+    t.string "name"
+    t.integer "bureau_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bureau_id"], name: "index_blog_committees_on_bureau_id"
+  end
+
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "blog_articles", "blog_bureaus", column: "bureau_id"
+  add_foreign_key "blog_committees", "blog_bureaus", column: "bureau_id"
 end
