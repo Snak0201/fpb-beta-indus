@@ -1,4 +1,5 @@
 <h1>管理画面</h1>
+<p><%== @user.email_address %>でログイン中</p>
 <h2>機能</h2>
 <h2>ログアウト</h2>
 <%= button_to "ログアウト", session_path, method: :delete %>
