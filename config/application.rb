@@ -24,6 +24,7 @@ module FpbBetaIndus
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
-    config.i18n.default_locale = :ja
+    # TODO: https://github.com/Snak0201/fpb-beta-indus/issues/8 で翻訳が効くようにする
+    # config.i18n.default_locale = :ja
   end
 end
