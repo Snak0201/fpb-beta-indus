@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root "static_pages#index"
   get "static_pages/index"
 
+  get "admins/index"
+
   resource :session
   resources :passwords, param: :token
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

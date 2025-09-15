@@ -23,7 +23,11 @@
   </head>
 
   <body>
-    <%= render HeaderComponent.new %>
-    <%= yield %>
+    <header>
+      <%= render HeaderComponent.new %>
+    </header>
+    <main class="main">
+      <%= yield %>
+    </main>
   </body>
 </html>
